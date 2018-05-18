@@ -1,5 +1,5 @@
 def prime?(n)
-  if n % (2...√n)==0
+  if n % 2==0
     true
   else
     false
