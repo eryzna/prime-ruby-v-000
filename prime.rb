@@ -1,10 +1,9 @@
-def prime?(n)
-  prime=(2..100).to_a
-  prime.each do |number|
-    if n % number==0
-      false
-    else
-      true
+def prime?(num)
+  if num < 0 or num == 0 or num == 1
+    return false
+  else
+    (2..num-1).to_a.all? do |possible_factor|
+      num % possible_factor != 0
     end
   end
 end
