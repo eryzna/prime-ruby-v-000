@@ -1,8 +1,9 @@
 def prime?(n)
-  prime=(2..√n).to_a
-  if n % 2==0
-    true
-  else
+  prime=(2..n).to_a
+  prime.each do |number|
+  if n % number==0
     false
+  else
+    true
   end
 end
